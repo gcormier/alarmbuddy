@@ -1,0 +1,93 @@
+esphome:
+  name: alarmbuddy
+  platform: ESP32
+  board: esp32dev
+
+wifi:
+  ssid: "yourssid"
+  password: "yourwifi"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Alarmbuddy Fallback Hotspot"
+    password: "x9iGij4DZIB"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+binary_sensor:
+  - platform: gpio
+    name: "BASEMENT WINDOW"
+    pin:
+      number: 32
+      inverted: True
+      mode: INPUT_PULLDOWN
+  
+  - platform: gpio 
+    name: "BACK PATIO"
+    pin:
+      number: 33
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "FRONT DOOR"
+    pin:
+      number: 25
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "FRONT PATIO"
+    pin:
+      number: 26
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "GARAGE DOOR"
+    pin:
+      number: 27
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  #- platform: gpio 
+  #  name: "INPUT6"
+  #  pin:
+  #    number: 14
+  #    inverted: True
+  #    mode: INPUT_PULLDOWN
+  #      
+  #- platform: gpio 
+  #  name: "INPUT7"
+  #  pin:
+  #    number: 12
+  #    inverted: True
+  #    mode: INPUT_PULLDOWN
+  #      
+  #- platform: gpio 
+  #  name: "INPUT8"
+  #  pin:
+  #    number: 13
+  #    inverted: True
+  #    mode: INPUT_PULLDOWN
+  #      
+  #- platform: gpio 
+  #  name: "INPUT9"
+  #  pin:
+  #    number: 13
+  #    inverted: True
+  #    mode: INPUT_PULLDOWN
+  #      
+  #- platform: gpio 
+  #  name: "INPUT10"
+  #  pin:
+  #    number: 16
+  #    inverted: True
+  #    mode: INPUT_PULLDOWN
