@@ -163,37 +163,27 @@ F 3 "" H 1200 1325 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 1250 1200 1325
-Text Label 1025 6150 0    39   ~ 0
+Text Label 1150 5750 0    39   ~ 0
 RTS
-Text Label 1025 6050 0    39   ~ 0
+Text Label 1150 5950 0    39   ~ 0
 3V3
-Text Label 1025 5950 0    39   ~ 0
+Text Label 1150 6050 0    39   ~ 0
 TX
-Text Label 1025 5850 0    39   ~ 0
+Text Label 1150 6150 0    39   ~ 0
 RX
-Text Label 1025 5750 0    39   ~ 0
+Text Label 1150 5850 0    39   ~ 0
 ~DTR
 $Comp
 L Connector_Generic:Conn_01x06 J9
 U 1 1 5E2F9BC4
-P 1425 5950
-F 0 "J9" H 1505 5942 50  0000 L CNN
-F 1 "FTDI" H 1505 5851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1425 5950 50  0001 C CNN
-F 3 "~" H 1425 5950 50  0001 C CNN
-	1    1425 5950
+P 1550 5950
+F 0 "J9" H 1630 5942 50  0000 L CNN
+F 1 "FTDI" H 1630 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1550 5950 50  0001 C CNN
+F 3 "~" H 1550 5950 50  0001 C CNN
+	1    1550 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1225 6150 1025 6150
-Wire Wire Line
-	1225 6050 1025 6050
-Wire Wire Line
-	1225 5950 1025 5950
-Wire Wire Line
-	1225 5850 1025 5850
-Wire Wire Line
-	1225 5750 1025 5750
 Wire Wire Line
 	5850 3100 6300 3100
 $Comp
@@ -241,17 +231,6 @@ Wire Wire Line
 	800  7450 800  7600
 Wire Wire Line
 	800  7600 750  7600
-$Comp
-L power:GND #PWR02
-U 1 1 5E3E817A
-P 1300 7450
-F 0 "#PWR02" H 1300 7200 50  0001 C CNN
-F 1 "GND" H 1305 7277 50  0000 C CNN
-F 2 "" H 1300 7450 50  0001 C CNN
-F 3 "" H 1300 7450 50  0001 C CNN
-	1    1300 7450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 3200 5850 3200
 Wire Wire Line
@@ -259,15 +238,15 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5E2A6A77
-P 1225 6250
+P 1200 6250
 AR Path="/5C5CDDE8/5E2A6A77" Ref="#PWR?"  Part="1" 
 AR Path="/5E2A6A77" Ref="#PWR017"  Part="1" 
 AR Path="/5E244F48/5E2A6A77" Ref="#PWR?"  Part="1" 
-F 0 "#PWR017" H 1225 6000 50  0001 C CNN
-F 1 "GND" H 1230 6077 50  0000 C CNN
-F 2 "" H 1225 6250 50  0001 C CNN
-F 3 "" H 1225 6250 50  0001 C CNN
-	1    1225 6250
+F 0 "#PWR017" H 1200 6000 50  0001 C CNN
+F 1 "GND" H 1205 6077 50  0000 C CNN
+F 2 "" H 1200 6250 50  0001 C CNN
+F 3 "" H 1200 6250 50  0001 C CNN
+	1    1200 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -631,4 +610,16 @@ Wire Wire Line
 	1500 950  1450 950 
 Wire Wire Line
 	4350 1250 4700 1250
+Wire Wire Line
+	1350 5750 1150 5750
+Wire Wire Line
+	1350 5850 1150 5850
+Wire Wire Line
+	1350 5950 1150 5950
+Wire Wire Line
+	1350 6050 1150 6050
+Wire Wire Line
+	1350 6150 1150 6150
+Wire Wire Line
+	1350 6250 1200 6250
 $EndSCHEMATC
