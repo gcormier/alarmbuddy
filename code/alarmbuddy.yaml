@@ -9,8 +9,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Alarmbuddy Fallback Hotspot"
-    password: "x9iGij4DZIB"
+    ssid: "AlarmbuddyFallback"
+    password: "alarmbuddy"
 
 captive_portal:
 
@@ -23,71 +23,71 @@ api:
 ota:
 binary_sensor:
   - platform: gpio
-    name: "BASEMENT WINDOW"
+    name: "INPUT1"
     pin:
       number: 32
       inverted: True
       mode: INPUT_PULLDOWN
   
   - platform: gpio 
-    name: "BACK PATIO"
+    name: "INPUT2"
     pin:
       number: 33
       inverted: True
       mode: INPUT_PULLDOWN
         
   - platform: gpio 
-    name: "FRONT DOOR"
+    name: "INPUT3"
     pin:
       number: 25
       inverted: True
       mode: INPUT_PULLDOWN
         
   - platform: gpio 
-    name: "FRONT PATIO"
+    name: "INPUT4"
     pin:
       number: 26
       inverted: True
       mode: INPUT_PULLDOWN
         
   - platform: gpio 
-    name: "GARAGE DOOR"
+    name: "INPUT5"
     pin:
       number: 27
       inverted: True
       mode: INPUT_PULLDOWN
         
-  #- platform: gpio 
-  #  name: "INPUT6"
-  #  pin:
-  #    number: 14
-  #    inverted: True
-  #    mode: INPUT_PULLDOWN
-  #      
-  #- platform: gpio 
-  #  name: "INPUT7"
-  #  pin:
-  #    number: 12
-  #    inverted: True
-  #    mode: INPUT_PULLDOWN
-  #      
-  #- platform: gpio 
-  #  name: "INPUT8"
-  #  pin:
-  #    number: 13
-  #    inverted: True
-  #    mode: INPUT_PULLDOWN
-  #      
-  #- platform: gpio 
-  #  name: "INPUT9"
-  #  pin:
-  #    number: 13
-  #    inverted: True
-  #    mode: INPUT_PULLDOWN
-  #      
-  #- platform: gpio 
-  #  name: "INPUT10"
-  #  pin:
-  #    number: 16
-  #    inverted: True
-  #    mode: INPUT_PULLDOWN
+  - platform: gpio 
+    name: "INPUT6"
+    pin:
+      number: 14
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "INPUT7"
+    pin:
+      number: 12
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "INPUT8"
+    pin:
+      number: 13
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "INPUT9"
+    pin:
+      number: 13
+      inverted: True
+      mode: INPUT_PULLDOWN
+        
+  - platform: gpio 
+    name: "INPUT10"
+    pin:
+      number: 16
+      inverted: True
+      mode: INPUT_PULLDOWN
