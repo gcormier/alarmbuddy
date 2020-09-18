@@ -622,4 +622,6 @@ Wire Wire Line
 	1350 6150 1150 6150
 Wire Wire Line
 	1350 6250 1200 6250
+Text Notes 4750 4000 0    50   ~ 0
+GPIO2 needs to be \nlow or floating when \nbooting to flash \nproperly. Avoid using\nif possible.
 $EndSCHEMATC
