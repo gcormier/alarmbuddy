@@ -23,22 +23,22 @@ jobs:
       # Get the current date and time, in the timezone specified above, for use later.
       - name: Get current date and time
         id: date
-        run: echo "::set-output name=date::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d %T')"
-
+        run: echo "date=$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d %T')" >> $GITHUB_OUTPUT
+        
       # Get the current date
       - name: Get current date
         id: date_only
-        run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+        run: echo "date_only=$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       # Actually run KiBot to generate all the files. The KiBot script used is
       # in the .kibot/release.kibot.yaml folder.
       - name: KiBot
         uses: INTI-CMNB/KiBot@v2_k6
         with:
-          config: PCB/.kibot/alarmbuddy.kibot.yaml
+          config: pcb/.kibot/alarmbuddy.kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: PCB/alarmbuddy.kicad_sch
-          board: PCB/alarmbuddy.kicad_pcb
+          schema: pcb/alarmbuddy.kicad_sch
+          board: pcb/alarmbuddy.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
       - name: Archive production artifacts
