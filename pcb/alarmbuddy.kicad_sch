@@ -1192,11 +1192,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a5491540-7e4b-4d81-8c6c-4f97814d04b7)
   )
-  (polyline (pts (xy 207.01 118.11) (xy 203.2 118.11))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid a5762477-8622-4c4d-bf35-92b45169c4f3)
-  )
-
   (wire (pts (xy 148.59 55.88) (xy 151.13 55.88))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a61240ec-16f6-450d-8540-ad388db12ec8)
@@ -1337,7 +1332,7 @@
     (uuid c5788ba0-0deb-43bc-88e5-12b8aa3dd736)
   )
   (text "GPIO18 works as U1RXD and is in\n an uncertain state when the chip is powered on, \nwhich may affect the chip’s\nentry into download boot mode. \nTo solve this issue, add an \nexternal pull-up resistor."
-    (at 207.01 154.94 180)
+    (at 207.01 154.94 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid dc083f35-3a5c-41a1-bea2-a6569f069d69)
   )
