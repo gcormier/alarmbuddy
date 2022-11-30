@@ -25,4 +25,4 @@ fp-info-cache
 *.xml
 *.csv
 
-pcb/*-backups**
+#pcb/*-backups**
