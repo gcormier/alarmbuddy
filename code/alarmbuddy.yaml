@@ -1,12 +1,13 @@
-esphome:
-  name: alarmbuddy
-
 esp32:
   board: esp32-s2-saola-1
   framework:
     type: arduino
     version: 2.0.3
     platform_version: 4.4.0
+
+esphome:
+  name: alarmbuddy
+
 
 wifi:
   ssid: !secret wifi_ssid
