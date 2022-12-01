@@ -26,10 +26,17 @@ The holes are sized for M3 bolts. There is no hardware on the back of the board,
 If you are using a purchased unit, it has been pre-flashed with esphome with the captive portal enabled. This will allow you to connect via WiFi directly to the device to configure your WiFi. Unless you brick your device with bad settings, you should never need to physically flash your device with a serial adapter.
 
 1. Power on the device and wait 30-60 seconds for it to setup the captive portal.
-1. Look for "AlarmBuddy Fallback" on your phone/computer and connect to it.<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup1.png?raw=true" height="400px"/> 
-1. Enter "alarmbuddy" as the password. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup2.png?raw=true" height="400px"/> 
-1. Once connected, you should be prompted to Sign In - click on this option. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup3.png?raw=true" height="400px"/> 
-1. You can then choose your WiFi SSID and enter the password. The device will connect to this, and the setting will remain unless you flash or upload a new esphome configuration. If the device fails to connect to this network at any point, it will revery to the captive portal on the AlarmbuddyFallback SSID. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup4.png?raw=true" height="400px"/> 
+1. Look for "AlarmBuddy Fallback" on your phone/computer and connect to it.
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup1.png?raw=true" height="400px"/> 
+
+1. Enter "alarmbuddy" as the password.
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup2.png?raw=true" height="400px"/> 
+
+1. Once connected, you should be prompted to Sign In - click on this option. 
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup3.png?raw=true" height="400px"/> 
+
+1. You can then choose your WiFi SSID and enter the password. The device will connect to this, and the setting will remain unless you flash or upload a new esphome configuration. If the device fails to connect to this network at any point, it will revery to the captive portal on the AlarmbuddyFallback SSID. 
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup4.png?raw=true" height="400px"/> 
 
 
 
