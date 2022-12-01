@@ -1,10 +1,11 @@
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/v6.jpg?raw=true" height="400px"/> 
+
 # alarmbuddy
 This is an ESP32-S2 board which can read up to 12 inputs. It can be programmed with custom software, or flashed with esphome to integrate easily with Home Assistant.
 
 I have disconnected my old alarm system, and now monitor it using Home Assistant, and can trigger various notifications (lights, horn, etc) using smart switches flashed with tasmota!
 
-<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/alarmbuddy_closeup.png?raw=true" height="200px" /> 
-<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/v6.jpg?raw=true" height="200px" /> 
+
 
 ## Store
 If you are interested in a fully built version I sell them on my tindie store, <a href="https://www.tindie.com/products/gcormier/alarmbuddy/">Greg's Tinker Town</a>
