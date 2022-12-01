@@ -11,7 +11,7 @@ on:
 jobs:
   FabricationOutputs:
     env:
-      BaseFileName: alarmbuddy
+      BaseFileName: ${{ github.event.repository.name }}
       Timezone: America/New_york
       OutputFolder: PCB/KiBotOutput
     runs-on: ubuntu-latest
@@ -35,10 +35,10 @@ jobs:
       - name: KiBot
         uses: INTI-CMNB/KiBot@v2_k6
         with:
-          config: pcb/.kibot/alarmbuddy.kibot.yaml
+          config: pcb/.kibot/kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: pcb/alarmbuddy.kicad_sch
-          board: pcb/alarmbuddy.kicad_pcb
+          schema: pcb/${{ env.BaseFileName }}.kicad_sch
+          board: pcb/${{ env.BaseFileName }}.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
       - name: Archive production artifacts

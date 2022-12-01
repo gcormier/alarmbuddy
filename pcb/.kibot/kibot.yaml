@@ -42,8 +42,6 @@ outputs:
       subtract_mask_from_silk: true
       inner_extension_pattern: '.gp%n'
     layers:
-      # Note: a more generic approach is to use 'copper' but then the filenames
-      # are slightly different.
       - F.Cu
       - B.Cu
       - F.SilkS
