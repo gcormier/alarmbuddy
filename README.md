@@ -5,11 +5,8 @@ This is an ESP32-S2 board which can read up to 12 inputs. It can be programmed w
 
 I have disconnected my old alarm system, and now monitor it using Home Assistant, and can trigger various notifications (lights, horn, etc) using smart switches flashed with tasmota!
 
-
-
 ## Store
 If you are interested in a fully built version I sell them on my tindie store, <a href="https://www.tindie.com/products/gcormier/alarmbuddy/">Greg's Tinker Town</a>
-
 
 ## Power
 It is meant to be powered by 10-24VAC, a common supply voltage for alarm systems in North America. The current draw should be only 10-30mA. The minimum DC voltage is 7V - using a 5V USB power supply will *not* work. A 12VDC power supply would be required.
@@ -25,6 +22,17 @@ The output current for sensors is limited to a few milliamps.
 The holes are sized for M3 bolts. There is no hardware on the back of the board, so as long as adequate electrical insulation is provided, double-sided foam tape could be used. An STL for a mounting plate is provided as well if you have access to a 3D printer.
 
 
-## Errata
+# Setup
+If you are using a purchased unit, it has been pre-flashed with esphome with the captive portal enabled. This will allow you to connect via WiFi directly to the device to configure your WiFi. Unless you brick your device with bad settings, you should never need to physically flash your device with a serial adapter.
+
+1. Power on the device and wait 30-60 seconds for it to setup the captive portal.
+1. Look for "AlarmBuddy Fallback" on your phone/computer and connect to it.<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup1.png?raw=true" height="400px"/> 
+1. Enter "alarmbuddy" as the password. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup2.png?raw=true" height="400px"/> 
+1. Once connected, you should be prompted to Sign In - click on this option. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup3.png?raw=true" height="400px"/> 
+1. You can then choose your WiFi SSID and enter the password. The device will connect to this, and the setting will remain unless you flash or upload a new esphome configuration. If the device fails to connect to this network at any point, it will revery to the captive portal on the AlarmbuddyFallback SSID. <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/setup4.png?raw=true" height="400px"/> 
+
+
+
+# Errata
 ### v6
 The RTS and DTR programming pins are swapped for GPIO0 and EN. If you are programming your device via WiFi with esphome, you will not run into any issuse. Should you ever brick your device and need to flash it from a serial adapter, you will need to ensure you swap these 2 wires when connecting your programmer.
