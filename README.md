@@ -1,9 +1,8 @@
 <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/v6.jpg?raw=true" height="400px"/> 
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/alarmbuddyv6.jpg?raw=true" height="400px"/> 
 
 # alarmbuddy
-This is an ESP32-S2 board which can read up to 12 inputs. It can be programmed with custom software, or flashed with esphome to integrate easily with Home Assistant.
-
-I have disconnected my old alarm system, and now monitor it using Home Assistant, and can trigger various notifications (lights, horn, etc) using smart switches flashed with tasmota!
+This is an ESP32-S2 board which can read up to 12 inputs. It can be programmed with custom software, or flashed with esphome to integrate easily with Home Assistant. The main goal is to replace an old alarm panel with one that can use all of the existing passive sensors but use Home Assistant for the automation and alerting.
 
 ## Store
 If you are interested in a fully built version I sell them on my tindie store, <a href="https://www.tindie.com/products/gcormier/alarmbuddy/">Greg's Tinker Town</a>
@@ -20,7 +19,6 @@ The output current for sensors is limited to a few milliamps.
 
 ## Mounting
 The holes are sized for M3 bolts. There is no hardware on the back of the board, so as long as adequate electrical insulation is provided, double-sided foam tape could be used. An STL for a mounting plate is provided as well if you have access to a 3D printer.
-
 
 # Setup
 If you are using a purchased unit, it has been pre-flashed with esphome with the captive portal enabled. This will allow you to connect via WiFi directly to the device to configure your WiFi. Unless you brick your device with bad settings, you should never need to physically flash your device with a serial adapter.
