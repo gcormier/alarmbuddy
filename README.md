@@ -1,5 +1,5 @@
 <img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/v6.jpg?raw=true" height="400px"/> 
-<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/alarmbuddyv6.jpg?raw=true" height="400px"/> 
+<img src="https://github.com/gcormier/alarmbuddy/blob/master/docs/alarmbuddy_v6.png?raw=true" height="400px"/> 
 
 # alarmbuddy
 This is an ESP32-S2 board which can read up to 12 inputs. It can be programmed with custom software, or flashed with esphome to integrate easily with Home Assistant. The main goal is to replace an old alarm panel with one that can use all of the existing passive sensors but use Home Assistant for the automation and alerting.
